@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luis Forni | Prueba Técnica</title>
+<meta name="description" content="Prueba técnica de CUNIX">
+<meta name="author" content="Luis Forni">
+
+{% load static %}
+<link rel="shortcut icon" href="{% static 'core/img/favicon.ico' %}" type="image/x-icon">
+<link rel="apple-touch-icon" href="{% static 'core/img/apple-touch-icon.png' %}">
+<link rel="apple-touch-icon" sizes="72x72" href="{% static 'core/img/apple-touch-icon-72x72.png' %}">
+<link rel="apple-touch-icon" sizes="114x114" href="{% static 'core/img/apple-touch-icon-114x114.png' %}">
+<link rel="stylesheet" type="text/css"  href="{% static 'core/css/bootstrap.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'core/fonts/font-awesome/css/font-awesome.css' %}">
+<link rel="stylesheet" type="text/css"  href="{% static 'core/css/style.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'core/css/prettyPhoto.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Economica&display=swap" rel="stylesheet">
+<script type="text/javascript" src="{% static 'core/js/modernizr.custom.js' %}"></script>
+
+<body>
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="{% url 'home' %}">Luis Forni Prueba Técnica</a> </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    </div>
+  </div>
+</nav>
+
+<header class="text-center" name="home">
+  <div class="intro-text">
+    <h1>Prueba <span class="color">Técnica</span></h1>
+    <p>CUNIX</p>
+    <div class="clearfix"></div>
+</header>
+
+<head>
+    <title>Prueba técnica de CUNIX</title>
+</head>
+
+<div id="social-section">
+  <div class="container">
+    <div class="social">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </div>
+</div>
+
+<div id="social-section">
+  <div class="container">
+    <div class="social">
+      <ul>
+        <li><a href="https://www.github.com/luisforni" target="_BLANK"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/luis-forni-97aa49223" target="_BLANK"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="https://www.instagram.com/luisforni" target="_BLANK"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="container">
+    <p>Copyright &copy; Luis Forni. Designed by <a href="https://www.github.com/luisforni" rel="nofollow">Luis Forni</a></p>
+  </div>
+</div>
+
+<!-- Javascripts --> 
+<script src="{% static 'core/js/index.js' %}"></script>
+<script type="text/javascript" src="{% static 'core/js/main.js' %}"></script>
+</body>
+</html>
